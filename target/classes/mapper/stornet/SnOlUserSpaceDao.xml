@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ch.stornet.modules.stornet.dao.SnOlUserSpaceDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.ch.stornet.modules.stornet.entity.SnOlUserSpaceEntity" id="snOlUserSpaceMap">
+        <result property="id" column="id"/>
+        <result property="userid" column="userid"/>
+        <result property="duration" column="duration"/>
+        <result property="totalSpace" column="total_space"/>
+        <result property="freeSpace" column="free_space"/>
+        <result property="createTime" column="create_time"/>
+    </resultMap>
+
+    <select id="selectByUserId" resultType="com.ch.stornet.modules.stornet.entity.SnOlUserSpaceEntity" parameterType="java.lang.String" >
+        select
+        id, userid, duration, total_space, free_space, create_time
+        from sn_ol_user_space
+        where userid = #{userId,jdbcType=VARCHAR}
+    </select>
+</mapper>

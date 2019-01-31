@@ -1,0 +1,4 @@
+com\ch\stornet\RedisTest.class
+com\ch\stornet\DynamicDataSourceTest.class
+com\ch\stornet\service\DataSourceTestService.class
+com\ch\stornet\JwtTest.class

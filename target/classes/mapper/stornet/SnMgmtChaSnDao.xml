@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ch.stornet.modules.stornet.dao.SnMgmtChaSnDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.ch.stornet.modules.stornet.entity.SnMgmtChaSnEntity" id="snMgmtChaSnMap">
+        <result property="id" column="id"/>
+        <result property="password" column="password"/>
+        <result property="currAmount" column="curr_amount"/>
+        <result property="recvAddress" column="recv_address"/>
+        <result property="remark" column="remark"/>
+    </resultMap>
+
+
+</mapper>

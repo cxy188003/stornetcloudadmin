@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ch.stornet.modules.stornet.dao.SnMgmtGenaccRecDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.ch.stornet.modules.stornet.entity.SnMgmtGenaccRecEntity" id="snMgmtGenaccRecMap">
+        <result property="id" column="id"/>
+        <result property="curType" column="cur_type"/>
+        <result property="amount" column="amount"/>
+        <result property="toAddress" column="to_address"/>
+        <result property="trType" column="tr_type"/>
+        <result property="remark" column="remark"/>
+    </resultMap>
+
+    <insert id="insertSelective" parameterType="com.ch.stornet.modules.stornet.entity.SnMgmtGenaccRecEntity" >
+        insert into sn_mgmt_genacc_rec
+        <trim prefix="(" suffix=")" suffixOverrides="," >
+            <if test="id != null" >
+                id,
+            </if>
+            <if test="curType != null" >
+                cur_type,
+            </if>
+            <if test="amount != null" >
+                amount,
+            </if>
+            <if test="toAddress != null" >
+                to_address,
+            </if>
+            <if test="trType != null" >
+                tr_type,
+            </if>
+            <if test="remark != null" >
+                remark,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides="," >
+            <if test="id != null" >
+                #{id,jdbcType=VARCHAR},
+            </if>
+            <if test="curType != null" >
+                #{curType,jdbcType=VARCHAR},
+            </if>
+            <if test="amount != null" >
+                #{amount,jdbcType=BIGINT},
+            </if>
+            <if test="toAddress != null" >
+                #{toAddress,jdbcType=VARCHAR},
+            </if>
+            <if test="trType != null" >
+                #{trType,jdbcType=VARCHAR},
+            </if>
+            <if test="remark != null" >
+                #{remark,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+</mapper>

@@ -1,0 +1,40 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.ch.stornet.modules.stornet.utils.JwtUtils",
+      "name": "renren.jwt",
+      "type": "com.ch.stornet.modules.stornet.utils.JwtUtils"
+    },
+    {
+      "sourceType": "com.ch.stornet.datasources.DynamicDataSourceConfig",
+      "name": "spring.datasource.druid.first",
+      "sourceMethod": "firstDataSource()",
+      "type": "javax.sql.DataSource"
+    },
+    {
+      "sourceType": "com.ch.stornet.datasources.DynamicDataSourceConfig",
+      "name": "spring.datasource.druid.second",
+      "sourceMethod": "secondDataSource()",
+      "type": "javax.sql.DataSource"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.ch.stornet.modules.stornet.utils.JwtUtils",
+      "defaultValue": 0,
+      "name": "renren.jwt.expire",
+      "type": "java.lang.Long"
+    },
+    {
+      "sourceType": "com.ch.stornet.modules.stornet.utils.JwtUtils",
+      "name": "renren.jwt.header",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.ch.stornet.modules.stornet.utils.JwtUtils",
+      "name": "renren.jwt.secret",
+      "type": "java.lang.String"
+    }
+  ]
+}

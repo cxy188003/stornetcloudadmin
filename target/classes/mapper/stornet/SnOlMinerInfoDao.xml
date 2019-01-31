@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ch.stornet.modules.stornet.dao.SnOlMinerInfoDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.ch.stornet.modules.stornet.entity.SnOlMinerInfoEntity" id="snOlMinerInfoMap">
+        <result property="id" column="id"/>
+        <result property="ip" column="ip"/>
+        <result property="port" column="port"/>
+        <result property="passWord" column="pass_word"/>
+        <result property="delFlag" column="del_flag"/>
+        <result property="remark" column="remark"/>
+        <result property="field" column="field"/>
+        <result property="field1" column="field1"/>
+    </resultMap>
+
+
+</mapper>

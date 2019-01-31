@@ -1,0 +1,77 @@
+2019-01-29 00:00:00.666 ERROR 97253 --- [stornetScheduler_Worker-13] org.quartz.core.JobRunShell              : Job DEFAULT.TASK_2 threw an unhandled Exception: 
+
+java.lang.ClassCastException: com.ch.stornet.modules.job.entity.ScheduleJobEntity cannot be cast to com.ch.stornet.modules.job.entity.ScheduleJobEntity
+	at com.ch.stornet.modules.job.utils.ScheduleJob.executeInternal(ScheduleJob.java:49)
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+
+2019-01-29 00:00:00.860 ERROR 97253 --- [stornetScheduler_Worker-13] org.quartz.core.ErrorLogger              : Job (DEFAULT.TASK_2 threw an exception.
+
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: com.ch.stornet.modules.job.entity.ScheduleJobEntity cannot be cast to com.ch.stornet.modules.job.entity.ScheduleJobEntity
+	at com.ch.stornet.modules.job.utils.ScheduleJob.executeInternal(ScheduleJob.java:49)
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 common frames omitted
+
+2019-01-29 00:00:00.056 ERROR 97253 --- [stornetScheduler_Worker-14] org.quartz.core.JobRunShell              : Job DEFAULT.TASK_1 threw an unhandled Exception: 
+
+java.lang.ClassCastException: com.ch.stornet.modules.job.entity.ScheduleJobEntity cannot be cast to com.ch.stornet.modules.job.entity.ScheduleJobEntity
+	at com.ch.stornet.modules.job.utils.ScheduleJob.executeInternal(ScheduleJob.java:49)
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+
+2019-01-29 00:00:00.880 ERROR 97253 --- [stornetScheduler_Worker-14] org.quartz.core.ErrorLogger              : Job (DEFAULT.TASK_1 threw an exception.
+
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: com.ch.stornet.modules.job.entity.ScheduleJobEntity cannot be cast to com.ch.stornet.modules.job.entity.ScheduleJobEntity
+	at com.ch.stornet.modules.job.utils.ScheduleJob.executeInternal(ScheduleJob.java:49)
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 common frames omitted
+
+2019-01-29 00:25:45.120 ERROR 97253 --- [QuartzScheduler_stornetScheduler-ubuntu1548646543523_MisfireHandler] c.alibaba.druid.filter.stat.StatFilter   : slow sql 2418 millis. SELECT COUNT(TRIGGER_NAME) FROM QRTZ_TRIGGERS WHERE SCHED_NAME = 'stornetScheduler' AND NOT (MISFIRE_INSTR = -1) AND NEXT_FIRE_TIME < ? AND TRIGGER_STATE = ?[1548750329583,"WAITING"]
+2019-01-29 00:30:00.168 ERROR 97253 --- [stornetScheduler_Worker-15] org.quartz.core.JobRunShell              : Job DEFAULT.TASK_1 threw an unhandled Exception: 
+
+java.lang.ClassCastException: com.ch.stornet.modules.job.entity.ScheduleJobEntity cannot be cast to com.ch.stornet.modules.job.entity.ScheduleJobEntity
+	at com.ch.stornet.modules.job.utils.ScheduleJob.executeInternal(ScheduleJob.java:49)
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+
+2019-01-29 00:30:00.169 ERROR 97253 --- [stornetScheduler_Worker-15] org.quartz.core.ErrorLogger              : Job (DEFAULT.TASK_1 threw an exception.
+
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: com.ch.stornet.modules.job.entity.ScheduleJobEntity cannot be cast to com.ch.stornet.modules.job.entity.ScheduleJobEntity
+	at com.ch.stornet.modules.job.utils.ScheduleJob.executeInternal(ScheduleJob.java:49)
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 common frames omitted
+
+2019-01-29 00:30:00.591 ERROR 97253 --- [stornetScheduler_Worker-16] org.quartz.core.JobRunShell              : Job DEFAULT.TASK_2 threw an unhandled Exception: 
+
+java.lang.ClassCastException: com.ch.stornet.modules.job.entity.ScheduleJobEntity cannot be cast to com.ch.stornet.modules.job.entity.ScheduleJobEntity
+	at com.ch.stornet.modules.job.utils.ScheduleJob.executeInternal(ScheduleJob.java:49)
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+
+2019-01-29 00:30:00.591 ERROR 97253 --- [stornetScheduler_Worker-16] org.quartz.core.ErrorLogger              : Job (DEFAULT.TASK_2 threw an exception.
+
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.ClassCastException: com.ch.stornet.modules.job.entity.ScheduleJobEntity cannot be cast to com.ch.stornet.modules.job.entity.ScheduleJobEntity
+	at com.ch.stornet.modules.job.utils.ScheduleJob.executeInternal(ScheduleJob.java:49)
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 common frames omitted
+

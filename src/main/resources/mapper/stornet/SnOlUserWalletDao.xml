@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ch.stornet.modules.stornet.dao.SnOlUserWalletDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.ch.stornet.modules.stornet.entity.SnOlUserWalletEntity" id="snOlUserWalletMap">
+        <result property="userid" column="userid"/>
+        <result property="amount" column="amount"/>
+        <result property="address" column="address"/>
+        <result property="curType" column="cur_type"/>
+    </resultMap>
+
+    <select id="selectByPrimaryKey" resultType="com.ch.stornet.modules.stornet.entity.SnOlUserWalletEntity" parameterType="java.lang.String" >
+        select
+        userid, amount, address, cur_type
+        from sn_ol_user_wallet
+        where userid = #{userid,jdbcType=VARCHAR}
+    </select>
+
+
+    <update id="updateByPrimaryKeySelective" parameterType="com.ch.stornet.modules.stornet.entity.SnOlUserWalletEntity" >
+        update sn_ol_user_wallet
+        <set >
+            <if test="amount != null" >
+                amount = #{amount,jdbcType=BIGINT},
+            </if>
+            <if test="address != null" >
+                address = #{address,jdbcType=VARCHAR},
+            </if>
+            <if test="curType != null" >
+                cur_type = #{curType,jdbcType=CHAR},
+            </if>
+        </set>
+        where userid = #{userid,jdbcType=VARCHAR}
+    </update>
+</mapper>
